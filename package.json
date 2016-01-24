@@ -1,0 +1,23 @@
+{
+  "name": "node-steam-shortcuts",
+  "version": "1.0.0",
+  "description": "Parser and builder of the shortcuts.vdf for Steam to manage Non-Steam-Games",
+  "main": "index.js",
+  "dependencies": {
+    "sha1": "^1.1.1"
+  },
+  "devDependencies": {
+    "async": "^1.5.2",
+    "chai": "^3.4.1",
+    "mocha": "^2.3.4"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "Steam",
+    "shortcuts"
+  ],
+  "author": "Theodor Hafas",
+  "license": "MIT"
+}
