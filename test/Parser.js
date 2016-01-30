@@ -13,7 +13,7 @@ describe("Parser",function(){
           fs.readFile(shortcutFile,callback);
         },
         function(fileContent,callback){
-          var shortcuts=Parser.parse(fileContent).toJson();
+          var shortcuts=Parser.parse(fileContent).toJSON();
           assert.lengthOf(shortcuts,2);
 
           assert.equal(shortcuts[0].appname,"A Game");
@@ -50,7 +50,7 @@ describe("Parser",function(){
         fs.readFile(shortcutFile,callback);
       },
       function(fileContent,callback){
-        var shortcuts=Parser.parse(fileContent).toJson();
+        var shortcuts=Parser.parse(fileContent).toJSON();
         assert.lengthOf(shortcuts,1000);
         callback();
       }
@@ -67,7 +67,7 @@ describe("Parser",function(){
         fs.readFile(shortcutFile,callback);
       },
       function(fileContent,callback){
-        var shortcuts=Parser.parse(fileContent).toJson();
+        var shortcuts=Parser.parse(fileContent).toJSON();
         assert.lengthOf(shortcuts,0);
         callback();
       }

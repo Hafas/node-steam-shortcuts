@@ -42,7 +42,7 @@ fs.readFile("shortcuts.vdf",function(err,shortcuts){
   if(err){
     return console.error("oops:",err);
   }
-  shortcuts=Parser.parse(shortcuts).toJson();
+  shortcuts=Parser.parse(shortcuts).toJSON();
   console.log(shortcuts.length);  //2
   console.log(shortcuts[0].appname);  //"A Non-Steam Game"
   console.log(shortcuts[0].tags); //["favorite","RPG","Dragons"]
@@ -105,7 +105,7 @@ Removes one or more tags from the shortcut. Both functions are identical.
 ##### getSHA1()
 Returns an SHA1-Hash of this shortcut. This value is only dependent on the `exe` property.
 
-##### toJson()
+##### toJSON()
 Returns a JSON-Object that describes the `Shortcut`-Object.
 
 <a name="documentation_shortcutcollection"></a>
@@ -142,7 +142,7 @@ Adds one ore more shortcuts to the collection. Both functions are identical.
 ###### Arguments
 * `shortcuts`: A `Shortcut`or an object describing a `Shortcut` or an array of `Shortcut`s and/or of objects describing `Shortcut`s
 
-##### toJson()
+##### toJSON()
 Returns a JSON-Object that describes the `ShortcutCollection`-Object.
 
 <!-- TODO Builder & Parser -->
