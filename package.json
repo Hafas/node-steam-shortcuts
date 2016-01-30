@@ -1,7 +1,7 @@
 {
   "name": "node-steam-shortcuts",
   "version": "1.0.0",
-  "description": "Parser and builder of the shortcuts.vdf for Steam to manage Non-Steam-Games",
+  "description": "Parse and build shortcuts.vdf files to manage Non-Steam Games in Valve's Steam-Client",
   "main": "index.js",
   "dependencies": {
     "sha1": "^1.1.1"
@@ -19,5 +19,12 @@
     "shortcuts"
   ],
   "author": "Theodor Hafas",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hafas/node-steam-shortcuts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Hafas/node-steam-shortcuts/issues"
+  }
 }
