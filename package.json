@@ -1,9 +1,11 @@
 {
   "name": "node-steam-shortcuts",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "description": "Parse and build shortcuts.vdf files to manage Non-Steam Games in Valve's Steam-Client",
   "main": "index.js",
   "dependencies": {
+    "crc": "^3.4.0",
+    "long": "^3.0.3",
     "sha1": "^1.1.1"
   },
   "devDependencies": {
